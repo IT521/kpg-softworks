@@ -23,7 +23,7 @@ export function Home() {
                             {/* Photo by Ferenc Almasi on Unsplash */}
                             <img
                                 src="https://images.unsplash.com/photo-1581276879432-15e50529f34b"
-                                alt="REact Router"
+                                alt="React Router"
                             />
                             <figcaption>
                                 <h3>Web Development</h3>

@@ -7,7 +7,7 @@ import { About, Home, Layout, NoMatch } from './pages';
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className="main">
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />

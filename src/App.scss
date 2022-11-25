@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+.main {
+    width: 100%;
+}
+
 .primary-navigation {
     background-color: $kpg-color-purple;
     color: white;

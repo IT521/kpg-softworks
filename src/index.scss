@@ -39,7 +39,7 @@ h6 {
             monospace;
     }
 
-    & a:not(.LI-profile-badge a) {
+    & a {
         background-color: $kpg-color-orange;
         text-decoration: none;
         color: white;

@@ -151,24 +151,21 @@ export function About() {
                         <li>African American Golf Association</li>
                     </ul>
                 </div>
-                <div className="pdf">
+                <div className="view-container">
                     <div className="resume">
                         <div className="view-pdf">
                             <SinglePagePDFViewer pdf={resumePDF} width={950} />
                         </div>
-                        <div className="view-doc">
+                        <div className="view-badge">
                             <iframe
                                 title="LinkedIn Profile Badge"
                                 width="350"
                                 height="320"
                                 src="linkedin-profile-badge.html"
-                                style={{
-                                    border: 'none',
-                                }}
                             ></iframe>
                         </div>
                     </div>
-                    <div className="columns">
+                    <div className="ad-columns">
                         <div className="ad-container">
                             <figure>
                                 {/* Photo by Ferenc Almasi on Unsplash */}
