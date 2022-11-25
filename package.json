@@ -1,6 +1,7 @@
 {
     "name": "kpg-softworks",
     "version": "0.1.0",
+    "homepage": "https://kpgsoftworks.com/",
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.5",
