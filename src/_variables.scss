@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+// Variables
+$kpg-color-purple: #6f0140;
+$kpg-color-orange: #fe5b00;
+$kpg-border-color: #e2e2e2;
+$kpg-font-color: #666666;
+$kpg-background-color: #ccc;
+$kpg-figcaption-background-color: rgba(0, 0, 0, 0.7);
+$kpg-box-shadow-color: rgba(99, 99, 99, 0.2);
+
+// Functions
+@function strip-unit($value) {
+    @return math.div($value, ($value * 0 + 1));
+}
+@function pixel-to-rem($value) {
+    @return #{math.div(strip-unit($value), 16)}rem;
+}
