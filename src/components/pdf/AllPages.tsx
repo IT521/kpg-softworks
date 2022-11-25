@@ -2,7 +2,9 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
+import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack5';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 export default function AllPages({ pdf }: { pdf: string }) {
     const [numPages, setNumPages] = useState<number>(0);
