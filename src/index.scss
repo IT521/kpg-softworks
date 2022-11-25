@@ -1,0 +1,56 @@
+@use 'variables' as *;
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+@font-face {
+    font-family: 'serpentine-bold';
+    src: url('./assets/unicode.serpentb-webfont.woff2') format('woff2'),
+        url('./assets/unicode.serpentb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Generic styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.main-content {
+    padding: pixel-to-rem(32px);
+
+    & code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+            monospace;
+    }
+
+    & a:not(.LI-profile-badge a) {
+        background-color: $kpg-color-orange;
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        border-radius: 0.25rem;
+        text-align: center;
+        display: inline-block;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}

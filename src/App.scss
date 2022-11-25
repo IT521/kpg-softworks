@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+.primary-navigation {
+    background-color: $kpg-color-purple;
+    color: white;
+
+    & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    & li {
+        float: left;
+    }
+
+    & li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: pixel-to-rem(16px);
+        text-decoration: none;
+    }
+
+    & li a:hover {
+        background-color: $kpg-color-orange;
+    }
+}
+
+/* footer */
+footer {
+    background-color: $kpg-color-purple;
+    padding: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+}

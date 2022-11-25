@@ -1,0 +1,226 @@
+@use '../variables' as *;
+
+// https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+
+/* Styles for the hero image */
+.hero {
+    /* Photo by Florian Olivo on Unsplash */
+    background: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713')
+        center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    /* grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(pixel-to-rem(240px), 1fr));
+    align-items: center;
+
+    &.about {
+        /* Photo by Gonzalo Pedroviejo Gómez on Unsplash */
+        background: url('https://images.unsplash.com/photo-1644512078177-f6708997183a')
+            center;
+    }
+
+    & * {
+        color: white;
+    }
+
+    & h1 {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    & article {
+        & p {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        & a {
+            padding: 1rem;
+            margin-top: 0.75rem;
+        }
+    }
+}
+
+/* widgets styles */
+.widgets {
+    padding: 2rem;
+
+    & ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(pixel-to-rem(320px), 1fr)
+        );
+        grid-gap: 1rem;
+
+        & li {
+            border: pixel-to-rem(1px) solid $kpg-border-color;
+            border-radius: 0.5rem;
+
+            & figure {
+                max-height: pixel-to-rem(220px);
+                overflow: hidden;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                position: relative;
+
+                & img {
+                    width: 100%;
+                }
+
+                & figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    background-color: $kpg-figcaption-background-color;
+                    width: 100%;
+
+                    & h3 {
+                        color: white;
+                        padding: 0.75rem;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+            & p {
+                font-size: 1rem;
+                line-height: 1.5;
+                padding: 1rem 0.75rem;
+                color: $kpg-font-color;
+            }
+        }
+    }
+
+    & .about,
+    & .competencies,
+    & .experience {
+        width: 95%;
+        margin: 0 auto pixel-to-rem(16px);
+        padding: pixel-to-rem(16px);
+        box-shadow: $kpg-box-shadow-color pixel-to-rem(0px) pixel-to-rem(2px)
+            pixel-to-rem(8px) pixel-to-rem(0px);
+    }
+
+    & .competencies,
+    & .experience {
+        & ul {
+            grid-template-columns: auto auto auto auto;
+            padding: 0;
+
+            & li {
+                border: none;
+                border-radius: 0;
+            }
+        }
+    }
+
+    & .experience {
+        & ul {
+            grid-template-columns: 28% 24% 24% 24%;
+        }
+    }
+
+    & .pdf {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+
+        & .resume {
+            flex: 0 0 75%;
+
+            & .view-pdf {
+                & .pagination {
+                    display: inline-block;
+                }
+
+                & .react-pdf__Page__textContent {
+                    display: none;
+                }
+
+                & .react-pdf__Page__annotations.annotationLayer {
+                    display: none;
+                }
+            }
+            & .view-doc {
+                display: none;
+            }
+        }
+        & .columns {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+            justify-content: space-around;
+        }
+        & .ad-container {
+            border: pixel-to-rem(1px) solid $kpg-border-color;
+            width: 85%;
+            min-width: pixel-to-rem(120px);
+            min-height: pixel-to-rem(60px);
+
+            // TODO: Remove once ads
+            & figure {
+                max-height: pixel-to-rem(220px);
+                overflow: hidden;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                position: relative;
+
+                & img {
+                    width: 100%;
+                }
+
+                & figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    background-color: $kpg-figcaption-background-color;
+                    width: 100%;
+
+                    & h3 {
+                        color: white;
+                        padding: 0.75rem;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+            // TODO: Remove once ads
+            & p {
+                font-size: 1rem;
+                line-height: 1.5;
+                padding: 1rem 0.75rem;
+                color: $kpg-font-color;
+            }
+        }
+        & .ad-container:hover {
+            background-color: $kpg-background-color;
+        }
+    }
+}
+
+@media (max-width: 624px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .widgets .pdf {
+        flex-direction: column;
+    }
+    .widgets .pdf .resume .view-pdf {
+        display: none;
+    }
+    .widgets .pdf .resume .view-doc {
+        display: block;
+        width: pixel-to-rem(382px);
+        text-align: left;
+        margin: 0 auto pixel-to-rem(16px);
+    }
+    .widgets .competencies ul {
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(pixel-to-rem(320px), 1fr)
+        );
+    }
+}
