@@ -36,6 +36,7 @@ jobs:
               env:
                   CI: true
                   HUSKY: 0
+                  PUBLIC_URL: https://kpgsoftworks.com
                   SITE_URL: ${{ inputs.site-url }}
               run: |
                   npm ci
