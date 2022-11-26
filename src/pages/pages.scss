@@ -157,48 +157,6 @@
             align-items: center;
             justify-content: space-around;
         }
-        & .ad-container {
-            border: pixel-to-rem(1px) solid $kpg-border-color;
-            width: 85%;
-            min-width: pixel-to-rem(120px);
-            min-height: pixel-to-rem(60px);
-
-            // TODO: Remove once ads
-            & figure {
-                max-height: pixel-to-rem(220px);
-                overflow: hidden;
-                border-top-left-radius: 0.5rem;
-                border-top-right-radius: 0.5rem;
-                position: relative;
-
-                & img {
-                    width: 100%;
-                }
-
-                & figcaption {
-                    position: absolute;
-                    bottom: 0;
-                    background-color: $kpg-figcaption-background-color;
-                    width: 100%;
-
-                    & h3 {
-                        color: white;
-                        padding: 0.75rem;
-                        font-size: 1.25rem;
-                    }
-                }
-            }
-            // TODO: Remove once ads
-            & p {
-                font-size: 1rem;
-                line-height: 1.5;
-                padding: 1rem 0.75rem;
-                color: $kpg-font-color;
-            }
-        }
-        & .ad-container:hover {
-            background-color: $kpg-background-color;
-        }
     }
 }
 
@@ -244,7 +202,7 @@
     .widgets .experience ul {
         text-align: center;
     }
-    .widgets .view-container .ad-container {
+    .widgets .view-container {
         width: 100%;
         margin: 0 auto pixel-to-rem(16px);
     }

@@ -165,60 +165,7 @@ export function About() {
                             ></iframe>
                         </div>
                     </div>
-                    <div className="ad-columns">
-                        <div className="ad-container">
-                            <figure>
-                                {/* Photo by Ferenc Almasi on Unsplash */}
-                                <img
-                                    src="https://images.unsplash.com/photo-1581276879432-15e50529f34b"
-                                    alt="REact Router"
-                                />
-                                <figcaption>
-                                    <h3>Web Development</h3>
-                                </figcaption>
-                            </figure>
-                            <p>
-                                We develop and test web applications and
-                                websites using TypeScript, JavaScript, HTML,
-                                CSS/SASS, Angular, React, Node, Cypress,
-                                WordPress
-                            </p>
-                        </div>
-                        <div className="ad-container">
-                            <figure>
-                                {/* Photo by Christopher Robin Ebbinghaus on Unsplash */}
-                                <img
-                                    src="https://images.unsplash.com/photo-1527427337751-fdca2f128ce5"
-                                    alt="Javascript"
-                                />
-                                <figcaption>
-                                    <h3>Web Content Management</h3>
-                                </figcaption>
-                            </figure>
-                            <p>
-                                We provide technical expertise of best in class
-                                web content management systems (WCMS) such as
-                                SDL Tridion, Sitecore, and ADAM
-                            </p>
-                        </div>
-                        <div className="ad-container">
-                            <figure>
-                                {/* Photo by Pankaj Patel on Unsplash */}
-                                <img
-                                    src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19"
-                                    alt="cascading style sheets"
-                                />
-                                <figcaption>
-                                    <h3>UX Engineering</h3>
-                                </figcaption>
-                            </figure>
-                            <p>
-                                Collaborate with researchers, designers,
-                                programmers, and other professionals to create
-                                and execute a successful User Experience
-                            </p>
-                        </div>
-                    </div>
+                    <div className="ad-columns"></div>
                 </div>
             </section>
         </main>
