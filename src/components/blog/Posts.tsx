@@ -1,4 +1,4 @@
-import './Posts.scss';
+import './blog.scss';
 
 import { blogPosts } from './blogPosts';
 import { Post } from './Post';

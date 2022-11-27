@@ -14,7 +14,7 @@ export function TechBlog() {
                     </p>
                 </article>
             </section>
-            <section className="widgets" id="widgets">
+            <section>
                 <Posts />
             </section>
         </main>

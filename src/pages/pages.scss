@@ -21,6 +21,13 @@
         background-size: cover;
     }
 
+    &.blog {
+        /* Photo by Michał Kubalczyk on Unsplash */
+        background: url('https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae')
+            center;
+        background-size: cover;
+    }
+
     & * {
         color: white;
     }

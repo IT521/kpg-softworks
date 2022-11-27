@@ -1,5 +1,3 @@
-import './Accordion.scss';
-
 import { useState } from 'react';
 
 export const Accordion = ({

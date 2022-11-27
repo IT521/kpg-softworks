@@ -1,0 +1,68 @@
+@use '../../variables' as *;
+
+.posts-container {
+    max-width: 85%;
+    min-height: pixel-to-rem(400px);
+
+    & a {
+        background-color: transparent;
+        text-decoration: underline;
+        color: -webkit-link;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        text-align: left;
+        display: inline-block;
+        transition: all 0s ease 0s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+    & pre {
+        padding-right: pixel-to-rem(8px);
+        width: fit-content;
+    }
+    & .accordion:first-child {
+        & .accordion-header {
+            margin-top: pixel-to-rem(16px);
+            border-top: pixel-to-rem(1px) solid $kpg-border-color;
+        }
+    }
+    & .accordion {
+        background-color: white;
+
+        & .accordion-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $kpg-hover-color;
+            }
+        }
+
+        & .accordion-header,
+        & .accordion-content {
+            padding: 1rem;
+            border-bottom: pixel-to-rem(1px) solid $kpg-border-color;
+        }
+
+        & .accordion-button {
+            padding: 0.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .posts-container {
+        max-width: 100%;
+
+        & pre {
+            max-width: 100%;
+        }
+    }
+}
