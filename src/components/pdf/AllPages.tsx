@@ -6,7 +6,7 @@ import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack5';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
-export default function AllPages({ pdf }: { pdf: string }) {
+export function AllPages({ pdf }: { pdf: string }) {
     const [numPages, setNumPages] = useState<number>(0);
 
     function onDocumentLoadSuccess({ numPages }: { numPages: number }) {

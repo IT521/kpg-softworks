@@ -1,7 +1,7 @@
 import './pages.scss';
 
 import resumePDF from '../assets/terry-francis-resume.pdf';
-import SinglePagePDFViewer from '../components/pdf/SinglePage';
+import { SinglePage as SinglePagePDFViewer } from '../components/pdf/SinglePage';
 
 export function About() {
     return (

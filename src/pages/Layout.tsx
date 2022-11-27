@@ -11,6 +11,9 @@ export function Layout() {
                     <li>
                         <Link to="/about">Company</Link>
                     </li>
+                    <li>
+                        <Link to="/blog">TechMavin</Link>
+                    </li>
                 </ul>
             </nav>
 
@@ -20,8 +23,8 @@ export function Layout() {
 
             <footer>
                 <p>
-                    Copyright &copy; {new Date().getFullYear()} KPG Softworks,
-                    LLC. All rights reserved.
+                    &copy; {new Date().getFullYear()} KPG Softworks, LLC. All
+                    rights reserved.
                 </p>
             </footer>
         </div>

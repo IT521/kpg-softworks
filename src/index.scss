@@ -34,9 +34,19 @@ h6 {
 .main-content {
     padding: pixel-to-rem(32px);
 
+    & pre {
+        width: 50%;
+        background-color: $kpg-code-background-color;
+
+        &:hover,
+        &:focus {
+            background-color: lighten($kpg-code-background-color, 5%);
+        }
+    }
     & code {
         font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
             monospace;
+        color: white;
     }
 
     & a {

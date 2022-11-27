@@ -6,13 +6,7 @@ import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack5';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
-export default function SinglePage({
-    pdf,
-    width,
-}: {
-    pdf: string;
-    width: number;
-}) {
+export function SinglePage({ pdf, width }: { pdf: string; width: number }) {
     const [numPages, setNumPages] = useState<number>(0);
     const [pageNumber, setPageNumber] = useState(1); // setting 1 to show first page
 
