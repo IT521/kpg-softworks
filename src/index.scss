@@ -22,6 +22,21 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar-thumb {
+    background-color: $kpg-code-background-color;
+    outline: 1px solid darken($kpg-code-background-color, 5%);
+    border-radius: pixel-to-rem(15px);
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 0 $kpg-box-shadow-color;
+    border-radius: pixel-to-rem(15px);
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -50,19 +65,28 @@ h6 {
     }
     & pre {
         background-color: $kpg-code-background-color;
+        border-radius: 0.75rem;
 
         &:hover,
         &:focus {
             background-color: lighten($kpg-code-background-color, 5%);
         }
-    }
-    & code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-            monospace;
-        color: white;
+        & code {
+            display: block;
+            max-width: 100%;
+            min-width: pixel-to-rem(100px);
+            background: none;
+            white-space: pre;
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                monospace;
+            -webkit-overflow-scrolling: touch;
+            overflow-x: auto;
+            padding: pixel-to-rem(16px);
+            padding-top: 0;
+        }
     }
 
-    & .code {
-        background-color: lighten($kpg-code-background-color, 50%);
+    & .inline-code {
+        background-color: lighten($kpg-code-background-color, 5%);
     }
 }

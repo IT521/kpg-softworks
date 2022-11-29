@@ -19,10 +19,6 @@
             opacity: 1;
         }
     }
-    & pre {
-        padding-right: pixel-to-rem(8px);
-        width: fit-content;
-    }
     & .accordion:first-child {
         & .accordion-header {
             margin-top: pixel-to-rem(16px);
@@ -60,9 +56,5 @@
 @media screen and (max-width: 767.98px) {
     .posts-container {
         max-width: 100%;
-
-        & pre {
-            max-width: 100%;
-        }
     }
 }

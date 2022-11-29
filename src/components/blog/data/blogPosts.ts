@@ -1,9 +1,12 @@
+import { deleteStaleBranches } from './deleteStaleBranches';
+import { getStaleBranches } from './getStaleBranches';
+
 export const blogPosts = [
     {
         title: 'How to Fix Error 404 Not Found: The requested URL was not found on this server.',
         content: `For URLs on the <i>client-side</i>, <b>React Router</b> or <b>Angular Router</b> will do the routing for you, but they fail on the <i>server-side</i> unless you make your server understands them by ensuring that your URLs reach your router. This is done by redirecting all requests to the entry point of your SPA.
                     <h4>Apache Configuration (.htaccess) for Single Page Apps (SPA) like React, Angular or Vue</h4>
-                    <p>Create a <span class="code">.htaccess</span> file in the same folder as your <span class="code">index.html</span> file</p>
+                    <p>Create a <span class="inline-code">.htaccess</span> file in the same folder as your <span class="inline-code">index.html</span> file</p>
                     <pre><code>
 # check that mod_negotiation is enabled
 &lt;IfModule mod_negotiation.c&gt;
@@ -32,7 +35,7 @@ export const blogPosts = [
     },
     {
         title: "Typescript can't locate PDF files",
-        content: `<span class="code">TS2307: Cannot find module '...pdf' or its corresponding type declarations.</span><p>Add a <span class="code">global.d.ts</span> file in your <span class="code">src</span> folder</p>
+        content: `<span class="inline-code">TS2307: Cannot find module '...pdf' or its corresponding type declarations.</span><p>Add a <span class="inline-code">global.d.ts</span> file in your <span class="inline-code">src</span> folder</p>
                     <pre><code>
 declare module '*.pdf';
                     </code></pre>
@@ -107,4 +110,23 @@ cp /c/Users/{username}/Downloads/node.lib /c/Users/{username}/.node-gyp/16.17.1/
         isExpanded: false,
         date: '11/27/2022',
     },
+    {
+        title: 'Get stale branches in Azure DevOps',
+        content: getStaleBranches,
+        isExpanded: false,
+        date: '11/28/2022',
+    },
+    {
+        title: 'Delete stale branches in Azure DevOps',
+        content: deleteStaleBranches,
+        isExpanded: false,
+        date: '11/28/2022',
+    },
 ];
+
+// {
+//     title: '',
+//     content: ``,
+//     isExpanded: false,
+//     date: '11/27/2022',
+// },

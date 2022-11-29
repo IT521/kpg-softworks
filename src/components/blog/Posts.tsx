@@ -1,6 +1,6 @@
 import './blog.scss';
 
-import { blogPosts } from './blogPosts';
+import { blogPosts } from './data/blogPosts';
 import { Post } from './Post';
 
 export const Posts = () => {
