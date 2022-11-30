@@ -1,13 +1,17 @@
 import { useState } from 'react';
 
 export const Accordion = ({
+    id,
     title,
     content,
-    isExpanded = false,
+    isExpanded,
+    isAccordion = true,
 }: {
+    id: number;
     title: string;
     content: string;
-    isExpanded?: boolean;
+    isExpanded: boolean;
+    isAccordion?: boolean;
 }) => {
     const [isActive, setIsActive] = useState(isExpanded);
 
@@ -15,8 +19,8 @@ export const Accordion = ({
         return { __html: content };
     };
 
-    return (
-        <div className="accordion">
+    return isAccordion ? (
+        <div className="accordion" data-id={`kpg-accordion-${id}`}>
             <div
                 className="accordion-header"
                 onClick={() => setIsActive(!isActive)}
@@ -30,6 +34,16 @@ export const Accordion = ({
                     dangerouslySetInnerHTML={createMarkup(content)}
                 ></div>
             )}
+        </div>
+    ) : (
+        <div className="accordion" data-id={`kpg-accordion-${id}`}>
+            <div className="accordion-header">
+                <div>{title}</div>
+            </div>
+            <div
+                className="accordion-content"
+                dangerouslySetInnerHTML={createMarkup(content)}
+            ></div>
         </div>
     );
 };

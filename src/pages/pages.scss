@@ -167,6 +167,33 @@
     }
 }
 
+.view-post {
+    & .accordion-header {
+        display: block;
+        font-size: 2em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    & a {
+        background-color: transparent;
+        text-decoration: underline;
+        color: -webkit-link;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        text-align: left;
+        display: inline-block;
+        transition: all 0s ease 0s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .widgets .view-container {
         flex-direction: column;

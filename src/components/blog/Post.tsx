@@ -1,13 +1,22 @@
 import { Accordion } from './Accordion';
+import { PostInterface } from './model';
 
 export const Post = ({
-    post: { title, content, isExpanded },
-    index,
+    post: { id, title, content },
+    isExpanded,
+    isAccordion = true,
 }: {
-    post: { title: string; content: string; isExpanded: boolean };
-    index: number;
+    post: PostInterface;
+    isExpanded: boolean;
+    isAccordion?: boolean;
 }) => {
     return (
-        <Accordion title={title} content={content} isExpanded={isExpanded} />
+        <Accordion
+            id={id}
+            title={title}
+            content={content}
+            isExpanded={isExpanded}
+            isAccordion={isAccordion}
+        />
     );
 };

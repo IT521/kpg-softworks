@@ -1,4 +1,5 @@
-export const getStaleBranches = `<h4>Prerequisites</h4>
+export const post1006 = `
+<h4>Prerequisites</h4>
 <ol>
 <li>Install the Azure CLI
 <pre><code>
@@ -33,8 +34,7 @@ mkdir -p \${DEVELOPER_HOME}/azCLI/scripts
 touch \${DEVELOPER_HOME}/azCLI/scripts/get_stale_branches.sh
 </code></pre>
 </li>
-</ol>
-File: <span class="inline-code">get_stale_branches.sh</span>
+<li>Edit file: <span class="inline-code">\${DEVELOPER_HOME}/azCLI/scripts/get_stale_branches.sh</span>:
 <pre><code>
 #!/bin/bash
 
@@ -98,6 +98,15 @@ jq -c '.[]' "$BRANCHES_FILE" | while read ref; do
     fi
 done
 </code></pre>
+</li>
+<li>Run script
+<pre><code>
+cd \${DEVELOPER_HOME}/azCLI
+sh ./scripts/get_stale_branches.sh
+</code></pre>
+</li>
+<li>See <a href="/blog/1007" target="_blank">Delete stale branches in Azure DevOps</a></li>
+</ol>
 <h5>Resources</h5>
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli" target="_blank">How to install the Azure CLI</a></li>

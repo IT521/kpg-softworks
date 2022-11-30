@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px 0 $kpg-box-shadow-color;
+    box-shadow: inset 0 0 pixel-to-rem(10px) 0 $kpg-box-shadow-color;
     border-radius: pixel-to-rem(15px);
 }
 
