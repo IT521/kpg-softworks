@@ -9,8 +9,8 @@ export function TechBlog() {
                 <h1>TechMavin</h1>
                 <article>
                     <p>
-                        Tech Blog: TypeScript, JavaScript, Bash, React, and
-                        Angular Software Development
+                        Tech Blog: TypeScript, JavaScript, React, and Angular
+                        Web Development
                     </p>
                 </article>
             </section>

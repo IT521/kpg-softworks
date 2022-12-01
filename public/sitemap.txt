@@ -1,3 +1,10 @@
 https://kpgsoftworks.com/
-https://kpgsoftworks.com/about
-https://kpgsoftworks.com/blog
+https://kpgsoftworks.com/about/
+https://kpgsoftworks.com/blog/
+https://kpgsoftworks.com/blog/1001
+https://kpgsoftworks.com/blog/1002
+https://kpgsoftworks.com/blog/1003
+https://kpgsoftworks.com/blog/1004
+https://kpgsoftworks.com/blog/1005
+https://kpgsoftworks.com/blog/1006
+https://kpgsoftworks.com/blog/1007

@@ -1,8 +1,9 @@
 @use '../../variables' as *;
 
 .posts-container {
-    max-width: 85%;
+    max-width: 75%;
     min-height: pixel-to-rem(400px);
+    margin: 0 auto;
 
     & a {
         background-color: transparent;

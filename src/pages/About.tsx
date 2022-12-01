@@ -165,7 +165,6 @@ export function About() {
                             ></iframe>
                         </div>
                     </div>
-                    <div className="ad-columns"></div>
                 </div>
             </section>
         </main>

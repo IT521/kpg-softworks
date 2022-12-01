@@ -22,7 +22,7 @@ export const blogPosts: Array<PostInterface> = [
     },
     {
         id: 1003,
-        title: 'Display PDFs in your React App',
+        title: 'How to Embed PDF Document in HTML Web Page',
         content: post1003,
         date: '11/27/2022',
     },

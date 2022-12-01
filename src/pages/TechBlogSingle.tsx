@@ -26,13 +26,13 @@ export function TechBlogSingle() {
                 <h1>TechMavin</h1>
                 <article>
                     <p>
-                        Tech Blog: TypeScript, JavaScript, Bash, React, and
-                        Angular Software Development
+                        Tech Blog: TypeScript, JavaScript, React, and Angular
+                        Web Development
                     </p>
                 </article>
             </section>
             <section className="view-post">
-                <Post post={post} isExpanded={false} isAccordion={false} />
+                <Post post={post} />
             </section>
         </main>
     ) : null;

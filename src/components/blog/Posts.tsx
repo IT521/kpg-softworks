@@ -1,8 +1,8 @@
 import './blog.scss';
 
+import { Accordion } from './Accordion';
 import { blogPosts } from './data/blogPosts';
 import { PostInterface } from './model';
-import { Post } from './Post';
 
 export const Posts = () => {
     const isExpandedIndex: number = blogPosts
@@ -12,13 +12,18 @@ export const Posts = () => {
     return (
         <div className="posts-container">
             {blogPosts &&
-                blogPosts.map((post: PostInterface, index: number) => (
-                    <Post
-                        key={index}
-                        post={post}
-                        isExpanded={index === isExpandedIndex}
-                    />
-                ))}
+                blogPosts.map((post: PostInterface, index: number) => {
+                    const { id, title, content } = post;
+                    return (
+                        <Accordion
+                            key={id}
+                            id={id}
+                            title={title}
+                            content={content}
+                            isExpanded={index === isExpandedIndex}
+                        />
+                    );
+                })}
         </div>
     );
 };

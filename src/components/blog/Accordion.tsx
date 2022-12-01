@@ -4,14 +4,12 @@ export const Accordion = ({
     id,
     title,
     content,
-    isExpanded,
-    isAccordion = true,
+    isExpanded = false,
 }: {
     id: number;
     title: string;
     content: string;
-    isExpanded: boolean;
-    isAccordion?: boolean;
+    isExpanded?: boolean;
 }) => {
     const [isActive, setIsActive] = useState(isExpanded);
 
@@ -19,7 +17,7 @@ export const Accordion = ({
         return { __html: content };
     };
 
-    return isAccordion ? (
+    return (
         <div className="accordion" data-id={`kpg-accordion-${id}`}>
             <div
                 className="accordion-header"
@@ -34,16 +32,6 @@ export const Accordion = ({
                     dangerouslySetInnerHTML={createMarkup(content)}
                 ></div>
             )}
-        </div>
-    ) : (
-        <div className="accordion" data-id={`kpg-accordion-${id}`}>
-            <div className="accordion-header">
-                <div>{title}</div>
-            </div>
-            <div
-                className="accordion-content"
-                dangerouslySetInnerHTML={createMarkup(content)}
-            ></div>
         </div>
     );
 };

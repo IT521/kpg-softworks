@@ -135,11 +135,15 @@
         text-align: center;
 
         & .resume {
-            flex: 0 0 75%;
+            flex: 0 0 90%;
 
             & .view-pdf {
                 & .pagination {
                     display: inline-block;
+                }
+
+                & .react-pdf__Page__canvas {
+                    margin: 0 auto;
                 }
 
                 & .react-pdf__Page__textContent {
@@ -157,18 +161,11 @@
                 }
             }
         }
-        & .ad-columns {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            align-items: center;
-            justify-content: space-around;
-        }
     }
 }
 
 .view-post {
-    & .accordion-header {
+    & .header {
         display: block;
         font-size: 2em;
         margin-top: 0.67em;
@@ -310,12 +307,5 @@
     }
     .widgets .view-container .resume .view-badge {
         margin-left: -48%;
-    }
-    .widgets .view-container .ad-columns {
-        display: grid;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(pixel-to-rem(240px), 1fr)
-        );
     }
 }
