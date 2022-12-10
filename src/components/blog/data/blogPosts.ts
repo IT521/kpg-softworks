@@ -6,6 +6,7 @@ import { post1004 } from './post1004';
 import { post1005 } from './post1005';
 import { post1006 } from './post1006';
 import { post1007 } from './post1007';
+import { post1008 } from './post1008';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -49,5 +50,11 @@ export const blogPosts: Array<PostInterface> = [
         title: 'Delete stale branches in Azure DevOps',
         content: post1007,
         date: '11/28/2022',
+    },
+    {
+        id: 1008,
+        title: 'Find the closest value in an array of values',
+        content: post1008,
+        date: '12/10/2022',
     },
 ];
