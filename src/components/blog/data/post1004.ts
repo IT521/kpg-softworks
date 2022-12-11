@@ -5,12 +5,12 @@ export const post1004 = `
 <ol>
 <li>Download headers tar file to match your node version</li>
 <li>Run the following command:</li>
-<pre><code>
+<pre><code data-language-bash>
 npx node-gyp install --tarball=/Users/{username}/Downloads/node-v16.17.1-headers.tar.gz
 npx node-gyp list
 </code></pre>
 <li>If #2 fails, run the following commands (note: replace {username} with your username):
-<pre><code>
+<pre><code data-language-bash>
 cd /Users/{username}/Downloads
 mkdir -p /Users/{username}/.node-gyp # Optional, if .node-gyp folder does not exist
 cp node-v16.17.1-headers.tar.gz /Users/{username}/.node-gyp

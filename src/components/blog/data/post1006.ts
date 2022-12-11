@@ -2,27 +2,27 @@ export const post1006 = `
 <h4>Prerequisites</h4>
 <ol>
 <li>Install the Azure CLI
-<pre><code>
+<pre><code data-language-bash>
 brew update && brew install azure-cli
 </code></pre>
 </li>
 <li>Install the Azure CLI DevOps extension
-<pre><code>
+<pre><code data-language-bash>
 az extension add --name azure-devops
 </code></pre>
 </li>
 <li>Login to Azure
-<pre><code>
+<pre><code data-language-bash>
 az login
 </code></pre>
 </li>
 <li>Configure Azure CLI
-<pre><code>
+<pre><code data-language-bash>
 az init
 </code></pre>
 </li>
 <li>Setup working directories
-<pre><code>
+<pre><code data-language-bash>
 export DEVELOPER_HOME="CHANGE_ME"; # set path to local working directory
 export AZ_PROJECT_ID="CHANGE_ME"; # set Azure Project ID
 export AZ_REPO_ID="CHANGE_ME"; # set Azure Repository ID
@@ -35,7 +35,7 @@ touch \${DEVELOPER_HOME}/azCLI/scripts/get_stale_branches.sh
 </code></pre>
 </li>
 <li>Edit file: <span class="inline-code">\${DEVELOPER_HOME}/azCLI/scripts/get_stale_branches.sh</span>:
-<pre><code>
+<pre><code data-language-bash>
 #!/bin/bash
 
 STALE_PERIOD=90
@@ -100,7 +100,7 @@ done
 </code></pre>
 </li>
 <li>Run script
-<pre><code>
+<pre><code data-language-bash>
 cd \${DEVELOPER_HOME}/azCLI
 sh ./scripts/get_stale_branches.sh
 </code></pre>

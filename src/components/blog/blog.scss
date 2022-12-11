@@ -51,6 +51,11 @@
         & .accordion-button {
             padding: 0.25rem;
         }
+
+        & .accordion-link {
+            text-align: center;
+            margin-top: pixel-to-rem(16px);
+        }
     }
 }
 

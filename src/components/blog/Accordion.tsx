@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const Accordion = ({
     id,
@@ -27,10 +28,12 @@ export const Accordion = ({
                 <div className="accordion-button">{isActive ? '-' : '+'}</div>
             </div>
             {isActive && (
-                <div
-                    className="accordion-content"
-                    dangerouslySetInnerHTML={createMarkup(content)}
-                ></div>
+                <div className="accordion-content">
+                    <div dangerouslySetInnerHTML={createMarkup(content)}></div>
+                    <div className="accordion-link">
+                        <Link to={`/blog/${id}`}>View</Link>
+                    </div>
+                </div>
             )}
         </div>
     );

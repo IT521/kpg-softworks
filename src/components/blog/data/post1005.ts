@@ -5,7 +5,7 @@ export const post1005 = `
 <ol>
 <li>Download headers tar file to match your node version</li>
 <li>Run the following commands (note: replace {username} with your username):
-<pre><code>
+<pre><code data-language-bash>
 cd /c/Users/{username}/Downloads
 mkdir -p /c/Users/{username}/.node-gyp # Optional, if .node-gyp folder does not exist
 cp node-v16.17.1-headers.tar.gz /c/Users/{username}/.node-gyp
@@ -22,7 +22,7 @@ echo 9 >installVersion
 <ol>
 <li>Download Win x64 Node Library tar file to match your node version</li>
 <li>Run the following commands (note: replace {username} with your username):
-<pre><code>
+<pre><code data-language-bash>
 mkdir /c/Users/{username}/.node-gyp/16.17.1/x64
 cp /c/Users/{username}/Downloads/node.lib /c/Users/{username}/.node-gyp/16.17.1/x64
 </code></pre>

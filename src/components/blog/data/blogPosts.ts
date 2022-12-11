@@ -7,6 +7,7 @@ import { post1005 } from './post1005';
 import { post1006 } from './post1006';
 import { post1007 } from './post1007';
 import { post1008 } from './post1008';
+import { post1009 } from './post1009';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -23,7 +24,7 @@ export const blogPosts: Array<PostInterface> = [
     },
     {
         id: 1003,
-        title: 'How to Embed PDF Document in HTML Web Page',
+        title: 'React: How to Embed PDF Document in HTML Web Page',
         content: post1003,
         date: '11/27/2022',
     },
@@ -41,13 +42,13 @@ export const blogPosts: Array<PostInterface> = [
     },
     {
         id: 1006,
-        title: 'Get stale branches in Azure DevOps',
+        title: 'Get stale branches in Microsoft Azure DevOps',
         content: post1006,
         date: '11/28/2022',
     },
     {
         id: 1007,
-        title: 'Delete stale branches in Azure DevOps',
+        title: 'Delete stale branches in Microsoft Azure DevOps',
         content: post1007,
         date: '11/28/2022',
     },
@@ -55,6 +56,12 @@ export const blogPosts: Array<PostInterface> = [
         id: 1008,
         title: 'Find the closest value in an array of values',
         content: post1008,
+        date: '12/10/2022',
+    },
+    {
+        id: 1009,
+        title: 'Disabling GPU Acceleration in Cypress running in Docker',
+        content: post1009,
         date: '12/10/2022',
     },
 ];
