@@ -10,7 +10,7 @@ export const Post = ({
     };
 
     return (
-        <div data-id={`kpg-post-${id}`}>
+        <div className="post" data-id={`kpg-post-${id}`}>
             <div className="header">
                 <div>{title}</div>
             </div>

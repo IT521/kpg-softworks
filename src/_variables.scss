@@ -10,6 +10,8 @@ $kpg-code-background-color: #ccc;
 $kpg-hover-color: #f5f8ff;
 $kpg-figcaption-background-color: rgba(0, 0, 0, 0.7);
 $kpg-box-shadow-color: rgba(99, 99, 99, 0.2);
+$color-code-background: #272822;
+$color-code-color: #f8f8f2;
 
 // Functions
 @function strip-unit($value) {

@@ -8,6 +8,8 @@ import { post1006 } from './post1006';
 import { post1007 } from './post1007';
 import { post1008 } from './post1008';
 import { post1009 } from './post1009';
+import { post1010 } from './post1010';
+import { post1011 } from './post1011';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -18,7 +20,7 @@ export const blogPosts: Array<PostInterface> = [
     },
     {
         id: 1002,
-        title: "Typescript can't locate PDF files",
+        title: 'TypeScript Module Resolution',
         content: post1002,
         date: '11/27/2022',
     },
@@ -63,5 +65,17 @@ export const blogPosts: Array<PostInterface> = [
         title: 'Disabling GPU Acceleration in Cypress running in Docker',
         content: post1009,
         date: '12/10/2022',
+    },
+    {
+        id: 1010,
+        title: 'Building and deploying a full-stack web application (front-end, back-end, and database)',
+        content: post1010,
+        date: '12/20/2022',
+    },
+    {
+        id: 1011,
+        title: 'Debugging techniques for web development',
+        content: post1011,
+        date: '12/20/2022',
     },
 ];

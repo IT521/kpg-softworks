@@ -64,12 +64,14 @@ h6 {
         }
     }
     & pre {
-        background-color: $kpg-code-background-color;
+        // background-color: $kpg-code-background-color;
+        background-color: $color-code-background;
+        color: $color-code-color;
         border-radius: 0.75rem;
 
         &:hover,
         &:focus {
-            background-color: lighten($kpg-code-background-color, 5%);
+            background-color: lighten($color-code-background, 10%);
         }
         & code {
             display: block;
@@ -87,6 +89,10 @@ h6 {
     }
 
     & .inline-code {
-        background-color: lighten($kpg-code-background-color, 5%);
+        background-color: $color-code-background;
+        color: $color-code-color;
+        border-radius: 0.3em;
+        padding: 0 pixel-to-rem(0.5px);
+        white-space: nowrap;
     }
 }

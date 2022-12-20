@@ -59,6 +59,12 @@
     }
 }
 
+.view-post {
+    width: 75%;
+    margin: 0 auto;
+    font-size: larger;
+}
+
 @media screen and (max-width: 767.98px) {
     .posts-container {
         max-width: 100%;
