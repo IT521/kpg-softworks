@@ -10,6 +10,8 @@ import { post1008 } from './post1008';
 import { post1009 } from './post1009';
 import { post1010 } from './post1010';
 import { post1011 } from './post1011';
+import { post1012 } from './post1012';
+import { post1013 } from './post1013';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -77,5 +79,17 @@ export const blogPosts: Array<PostInterface> = [
         title: 'Debugging techniques for web development',
         content: post1011,
         date: '12/20/2022',
+    },
+    {
+        id: 1012,
+        title: 'Securing a web application with proper authentication and authorization techniques',
+        content: post1012,
+        date: '12/21/2022',
+    },
+    {
+        id: 1013,
+        title: 'Optimizing website performance and loading times',
+        content: post1013,
+        date: '12/21/2022',
     },
 ];
