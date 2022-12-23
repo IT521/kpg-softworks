@@ -1,4 +1,5 @@
 export const post1006 = `
+<article>
 <h4>Prerequisites</h4>
 <ol>
 <li>Install the Azure CLI
@@ -113,4 +114,5 @@ sh ./scripts/get_stale_branches.sh
 <li><a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-list" target="_blank">Available Azure CLI extensions</a></li>
 <li><a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-configuration" target="_blank">Azure CLI configuration</a></li>
 </ul>
+</article>
 `;

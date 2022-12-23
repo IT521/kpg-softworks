@@ -1,6 +1,7 @@
 export const post1004 = `
-<h3>Terminal</h3>
-<h4>Install node v16.17.1 Headers</h4>
+<article>
+<h4>Terminal</h4>
+<h5>Install node v16.17.1 Headers</h5>
 <a href="https://nodejs.org/dist/v16.17.1/node-v16.17.1-headers.tar.gz" target="_blank">https://nodejs.org/dist/v16.17.1/node-v16.17.1-headers.tar.gz</a>
 <ol>
 <li>Download headers tar file to match your node version</li>
@@ -21,5 +22,7 @@ cd 16.17.1
 touch installVersion
 echo 9 >installVersion
 </code></pre>
-</li></ol>
+</li>
+</ol>
+</article>
 `;

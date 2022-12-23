@@ -1,4 +1,5 @@
 export const post1007 = `
+<article>
 <h4>Prerequisites</h4>
 <ol>
 <li>See <a href="/blog/1006" target="_blank">Get stale branches in Azure DevOps</a></li>
@@ -67,4 +68,5 @@ sh \${DEVELOPER_HOME}/git-delete-stale-branches.sh
 <li><a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-list" target="_blank">Available Azure CLI extensions</a></li>
 <li><a href="https://learn.microsoft.com/en-us/cli/azure/azure-cli-configuration" target="_blank">Azure CLI configuration</a></li>
 </ul>
+</article>
 `;

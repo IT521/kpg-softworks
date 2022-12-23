@@ -1,12 +1,12 @@
 export const post1013 = `
-<div>
+<article>
     <p>
         Optimizing website performance and loading times is essential to improve
         the user experience and increase search engine rankings. In this
         article, we will discuss some best practices for optimizing website
         performance and loading times.
     </p>
-    <h2>What is website performance and loading times?</h2>
+    <h3>What is website performance and loading times?</h3>
     <p>
         Website performance refers to how quickly a website loads and responds
         to user actions. It is an important factor in the user experience, as
@@ -17,7 +17,7 @@ export const post1013 = `
         become interactive. This includes the time it takes to download the
         HTML, CSS, and JavaScript files, as well as any images or other media.
     </p>
-    <h2>Best practices for optimizing website performance</h2>
+    <h3>Best practices for optimizing website performance</h3>
     <ol>
         <li>
             <p>
@@ -68,7 +68,7 @@ export const post1013 = `
             </p>
         </li>
     </ol>
-    <h2>Conclusion</h2>
+    <h3>Conclusion</h3>
     <p>
         Optimizing website performance and loading times is essential to improve
         the user experience and increase search engine rankings. By following
@@ -76,5 +76,5 @@ export const post1013 = `
         images, and minifying CSS and JavaScript, you can significantly improve
         the performance of your website.
     </p>
-</div>
+</article>
 `;

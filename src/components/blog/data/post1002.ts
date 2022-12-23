@@ -1,4 +1,5 @@
 export const post1002 = `
+<article>
 <p>TypeScript is a programming language that adds optional static typing to JavaScript. One important aspect of TypeScript is module resolution, which refers to the process of finding and loading the correct version of a module at runtime.</p>
 <p>TypeScript uses the Node.js module resolution algorithm to find and load modules. This algorithm starts by looking for a file with the specified name in the current directory. If the file is not found, it will look in the node_modules directory. This process is repeated recursively until the module is found or the root directory is reached.</p>
 <p>There are several ways to specify a module in TypeScript:</p>
@@ -16,4 +17,5 @@ export const post1002 = `
 <pre><code>
 declare module '*.pdf';
 </code></pre>
+</article>
 `;

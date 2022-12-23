@@ -1,4 +1,5 @@
 export const post1001 = `
+<article>
 <p>For URLs on the <i>client-side</i>, <b>React Router</b> or <b>Angular Router</b> will do the routing for you, but they fail on the <i>server-side</i> unless you make your server understands them by ensuring that your URLs reach your router. This is done by redirecting all requests to the entry point of your SPA.</p>
 <h4>Apache Configuration (.htaccess) for Single Page Apps (SPA) like React, Angular or Vue</h4>
 <p>Create a <span class="inline-code">.htaccess</span> file in the same folder as your <span class="inline-code">index.html</span> file</p>
@@ -24,4 +25,5 @@ export const post1001 = `
     RewriteRule . /index.html [L]
 &lt;/IfModule&gt;
 </code></pre>
+</article>
 `;

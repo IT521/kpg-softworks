@@ -12,6 +12,13 @@ import { post1010 } from './post1010';
 import { post1011 } from './post1011';
 import { post1012 } from './post1012';
 import { post1013 } from './post1013';
+import { post1014 } from './post1014';
+import { post1015 } from './post1015';
+import { post1016 } from './post1016';
+import { post1017 } from './post1017';
+import { post1018 } from './post1018';
+import { post1019 } from './post1019';
+import { post1020 } from './post1020';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -91,5 +98,47 @@ export const blogPosts: Array<PostInterface> = [
         title: 'Optimizing website performance and loading times',
         content: post1013,
         date: '12/21/2022',
+    },
+    {
+        id: 1014,
+        title: 'Advanced CSS techniques (e.g. flexbox, grid, animations, transforms, filters)',
+        content: post1014,
+        date: '12/22/2022',
+    },
+    {
+        id: 1015,
+        title: 'Advanced CSS techniques - Flexbox',
+        content: post1015,
+        date: '12/22/2022',
+    },
+    {
+        id: 1016,
+        title: 'Advanced CSS techniques - Grid',
+        content: post1016,
+        date: '12/22/2022',
+    },
+    {
+        id: 1017,
+        title: 'Advanced CSS techniques - Animations',
+        content: post1017,
+        date: '12/22/2022',
+    },
+    {
+        id: 1018,
+        title: 'Advanced CSS techniques - Transforms',
+        content: post1018,
+        date: '12/22/2022',
+    },
+    {
+        id: 1019,
+        title: 'Advanced CSS techniques - Filters',
+        content: post1019,
+        date: '12/22/2022',
+    },
+    {
+        id: 1020,
+        title: 'Advanced CSS techniques - Pseudo-classes and Pseudo-elements',
+        content: post1020,
+        date: '12/22/2022',
     },
 ];

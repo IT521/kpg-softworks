@@ -1,4 +1,5 @@
 export const post1008 = `
+<article>
 <pre><code data-language-javascript>
 function findClosestValue(arr, target) {
   // Sort the array in ascending order
@@ -34,4 +35,5 @@ console.log(closest.closestIndex); // Output: 3
 <p>The function first sorts the array in ascending order using the sort() method. It then initializes the closestValue and closestIndex variables to the first value and index in the array, respectively.</p>
 <p>Next, the function loops through the array and uses the Math.abs() method to find the absolute difference between each value and the target value. If the absolute difference of a value is less than the absolute difference of the current closestValue, the closestValue and closestIndex variables are updated to the new value and its index.</p>
 <p>Once the loop has finished, the function returns an object with the closestValue and closestIndex properties. This object can then be accessed in the caller to retrieve the closest value and its index.</p>
+</article>
 `;

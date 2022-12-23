@@ -1,5 +1,5 @@
 export const post1003 = `
-<div>
+<article>
 <p>You can use the <span class="inline-code">react-pdf</span> library to embed a PDF document in a React application. Here's an example of how you can do it:</p>
 <ol>
 <li>Install the <span class="inline-code">react-pdf</span> library by running <span class="inline-code">npm install react-pdf</span> or <span class="inline-code">yarn add react-pdf</span>.</li>
@@ -18,7 +18,8 @@ render() {
     &lt;/Document&gt;
   );
 }
-</code></pre></li></ol>
+</code></pre>
+</li></ol>
 <p>This will render the first page of the PDF document in your React component. You can use the <span class="inline-code">pageNumber</span> prop to specify which page you want to render.</p>
 <p>Alternatively, you can also use the <span class="inline-code">object</span> element to embed a PDF document in your HTML page:</p>
 <pre><code>
@@ -28,5 +29,5 @@ render() {
 &lt;/object&gt;
 </code></pre>
 <p>This will embed the PDF document in the HTML page and display it in the browser. If the browser doesn't support PDF embedding, the text inside the <span class="inline-code">object</span> element will be displayed instead.</p>
-</div>
+</article>
 `;

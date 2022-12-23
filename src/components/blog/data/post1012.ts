@@ -1,5 +1,5 @@
 export const post1012 = `
-<div>
+<article>
 <p>
     Securing a web application with proper authentication and
     authorization techniques is essential to protect against
@@ -8,7 +8,7 @@ export const post1012 = `
     some best practices for implementing authentication and
     authorization in web applications.
 </p>
-<h2>What is authentication and authorization?</h2>
+<h3>What is authentication and authorization?</h3>
 <p>
     Authentication is the process of verifying the identity of a user or
     system. It involves verifying the credentials provided by the user,
@@ -22,7 +22,7 @@ export const post1012 = `
     actions a user can perform within the application, such as creating,
     reading, updating, or deleting data.
 </p>
-<h2>Best practices for implementing authentication</h2>
+<h3>Best practices for implementing authentication</h3>
 <ol>
     <li>
         <p>
@@ -64,7 +64,7 @@ export const post1012 = `
         </p>
     </li>
 </ol>
-<h2>Best practices for implementing authorization</h2>
+<h3>Best practices for implementing authorization</h3>
 <ol>
     <li>
         <p>
@@ -103,7 +103,7 @@ export const post1012 = `
         </p>
     </li>
 </ol>
-<h2>Conclusion</h2>
+<h3>Conclusion</h3>
 <p>
     Implementing proper authentication and authorization techniques is
     essential to secure a web application and protect against
@@ -112,5 +112,5 @@ export const post1012 = `
     access control, you can ensure that your application is secure and
     your sensitive data is protected.
 </p>
-</div>
+</article>
 `;

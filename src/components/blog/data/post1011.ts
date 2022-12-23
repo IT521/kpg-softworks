@@ -1,5 +1,5 @@
 export const post1011 = `
-<div>
+<article>
     <p>
         Debugging is an essential part of the web development process. It allows
         developers to identify and fix problems in their code, improving the
@@ -267,5 +267,5 @@ export const post1011 = `
             </ul>
         </li>
     </ol>
-</div>
+</article>
 `;
