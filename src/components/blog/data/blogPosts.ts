@@ -19,6 +19,7 @@ import { post1017 } from './post1017';
 import { post1018 } from './post1018';
 import { post1019 } from './post1019';
 import { post1020 } from './post1020';
+import { post1021 } from './post1021';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -140,5 +141,11 @@ export const blogPosts: Array<PostInterface> = [
         title: 'Advanced CSS techniques - Pseudo-classes and Pseudo-elements',
         content: post1020,
         date: '12/22/2022',
+    },
+    {
+        id: 1021,
+        title: 'Building a web application with a modern JavaScript framework (e.g. React, Vue.js, Angular)',
+        content: post1021,
+        date: '12/23/2022',
     },
 ];

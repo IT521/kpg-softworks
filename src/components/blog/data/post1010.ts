@@ -115,7 +115,7 @@ export const post1010 = `
                             CSS, and JavaScript for the front-end, and
                             frameworks like
                             <a
-                                href="https://reactjs.org/tutorial/tutorial.html"
+                                href="https://reactjs.org/docs/getting-started.html"
                                 target="_blank"
                                 >React</a
                             >,
