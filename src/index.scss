@@ -89,10 +89,14 @@ h6 {
     }
 
     & .inline-code {
-        background-color: $color-code-background;
-        color: $color-code-color;
-        border-radius: 0.3em;
-        padding: 0 pixel-to-rem(0.5px);
+        font-weight: bold;
         white-space: nowrap;
+
+        &:before {
+            content: '`';
+        }
+        &:after {
+            content: '`';
+        }
     }
 }
