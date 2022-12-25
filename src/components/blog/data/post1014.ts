@@ -1,5 +1,5 @@
 export const post1014 = `
-<div>
+<article>
     <p>
         CSS (Cascading Style Sheets) is a style sheet language used for
         describing the look and formatting of a document written in HTML
@@ -104,5 +104,5 @@ export const post1014 = `
         little bit of practice and experimentation, you can master these
         techniques and create some truly impressive designs.
     </p>
-</div>
+</article>
 `;

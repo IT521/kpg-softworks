@@ -21,6 +21,7 @@ import { post1019 } from './post1019';
 import { post1020 } from './post1020';
 import { post1021 } from './post1021';
 import { post1022 } from './post1022';
+import { post1023 } from './post1023';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -154,5 +155,11 @@ export const blogPosts: Array<PostInterface> = [
         title: 'Working with APIs in JavaScript',
         content: post1022,
         date: '12/24/2022',
+    },
+    {
+        id: 1023,
+        title: 'JavaScript basics and DOM manipulation',
+        content: post1023,
+        date: '12/25/2022',
     },
 ];
