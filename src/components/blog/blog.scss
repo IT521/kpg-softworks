@@ -44,7 +44,7 @@
 
         & .accordion-header,
         & .accordion-content {
-            padding: 1rem;
+            padding: 2rem;
             border-bottom: pixel-to-rem(1px) solid $kpg-border-color;
         }
 
@@ -63,10 +63,17 @@
     width: 75%;
     margin: 0 auto;
     font-size: larger;
+
+    & .post {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
     .posts-container {
         max-width: 100%;
+    }
+    .view-post {
+        width: 100%;
     }
 }
