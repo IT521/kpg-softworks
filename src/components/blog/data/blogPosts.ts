@@ -23,6 +23,9 @@ import { post1021 } from './post1021';
 import { post1022 } from './post1022';
 import { post1023 } from './post1023';
 import { post1024 } from './post1024';
+import { post1025 } from './post1025';
+import { post1026 } from './post1026';
+import { post1027 } from './post1027';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -168,5 +171,23 @@ export const blogPosts: Array<PostInterface> = [
         title: 'Building a responsive website with Bootstrap',
         content: post1024,
         date: '12/26/2022',
+    },
+    {
+        id: 1025,
+        title: 'How To Improve SEO Rankings',
+        content: post1025,
+        date: '12/28/2022',
+    },
+    {
+        id: 1026,
+        title: 'Introduction to HTML and CSS',
+        content: post1026,
+        date: '12/29/2022',
+    },
+    {
+        id: 1027,
+        title: 'How to use Micro Frontends to architect web apps',
+        content: post1027,
+        date: '12/29/2022',
     },
 ];
