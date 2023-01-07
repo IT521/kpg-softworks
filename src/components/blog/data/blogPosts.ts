@@ -26,6 +26,9 @@ import { post1024 } from './post1024';
 import { post1025 } from './post1025';
 import { post1026 } from './post1026';
 import { post1027 } from './post1027';
+import { post1028 } from './post1028';
+import { post1029 } from './post1029';
+import { post1030 } from './post1030';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -189,5 +192,23 @@ export const blogPosts: Array<PostInterface> = [
         title: 'How to use Micro Frontends to architect web apps',
         content: post1027,
         date: '12/29/2022',
+    },
+    {
+        id: 1028,
+        title: 'Tips for optimizing your website for mobile devices',
+        content: post1028,
+        date: '01/05/2023',
+    },
+    {
+        id: 1029,
+        title: 'How to Check if a Value is an Object in JavaScript',
+        content: post1029,
+        date: '01/06/2023',
+    },
+    {
+        id: 1030,
+        title: 'How  to remove a specific item from an array in JavaScript',
+        content: post1030,
+        date: '01/07/2023',
     },
 ];
