@@ -29,6 +29,7 @@ import { post1027 } from './post1027';
 import { post1028 } from './post1028';
 import { post1029 } from './post1029';
 import { post1030 } from './post1030';
+import { post1031 } from './post1031';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -210,5 +211,11 @@ export const blogPosts: Array<PostInterface> = [
         title: 'How  to remove a specific item from an array in JavaScript',
         content: post1030,
         date: '01/07/2023',
+    },
+    {
+        id: 1031,
+        title: 'How  to asynchronously load and execute ECMAScript modules on demand in Angular',
+        content: post1031,
+        date: '01/09/2023',
     },
 ];
