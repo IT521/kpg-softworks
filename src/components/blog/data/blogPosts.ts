@@ -30,6 +30,7 @@ import { post1028 } from './post1028';
 import { post1029 } from './post1029';
 import { post1030 } from './post1030';
 import { post1031 } from './post1031';
+import { post1032 } from './post1032';
 
 export const blogPosts: Array<PostInterface> = [
     {
@@ -217,5 +218,11 @@ export const blogPosts: Array<PostInterface> = [
         title: 'How  to asynchronously load and execute ECMAScript modules on demand in Angular',
         content: post1031,
         date: '01/09/2023',
+    },
+    {
+        id: 1032,
+        title: 'An overview of Webpack: a modern front-end build tool',
+        content: post1032,
+        date: '02/04/2023',
     },
 ];
