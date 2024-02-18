@@ -28,7 +28,7 @@ export const post1031 = `
                 called <span class="inline-code">my.module.ts</span>, you would
                 configure the route like this:
             </p>
-            <pre><code>
+            <pre><code class="language-typescript">
 {
     path: 'my',
     loadChildren: './my.module#MyModule'
@@ -46,7 +46,7 @@ export const post1031 = `
                 >
                 property to preload all the lazy load modules:
             </p>
-                <pre><code>
+                <pre><code class="language-typescript">
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
@@ -78,7 +78,7 @@ export class AppRoutingModule { }
                     the route and only preload the one that are set to be
                     preloaded
                 </p>
-                <pre><code>
+                <pre><code class="language-typescript">
 { path: 'about', loadChildren: './about/about.module#AboutModule', data: { preload: true } },
 </code></pre>
                 <p>
@@ -112,7 +112,7 @@ export class AppRoutingModule { }
                 Create a <span class="inline-code">ModuleLoaderService</span> to
                 use dynamic imports:
             </p>
-            <pre><code>
+            <pre><code class="language-typescript">
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -145,7 +145,7 @@ export class ModuleLoaderService {
                 <span class="inline-code">ModuleLoaderService</span> to load a
                 module in an Angular component:
             </p>
-            <pre><code>
+            <pre><code class="language-typescript">
 import { Component, OnInit } from '@angular/core';
 import { ModuleLoaderService } from './module-loader.service';
 
@@ -194,14 +194,14 @@ export class AppComponent implements OnInit {
                 <span class="inline-code">@ngx-dynamic-components/core</span>,
                 you need to install it using npm
             </p>
-            <pre><code>
+            <pre><code class="language-bash">
 npm install @ngx-dynamic-components/core
 </code></pre>
             <p>
                 and then import it in your module and use it to load your
                 component.
             </p>
-            <pre><code>
+            <pre><code class="language-typescript">
 import { DynamicComponentLoaderModule } from '@ngx-dynamic-components/core';
 
 @NgModule({
@@ -218,14 +218,14 @@ export class MyModule { }
                 some additional features such as showing a loading spinner while
                 the component is loading.
             </p>
-            <pre><code>
+            <pre><code class="language-bash">
 npm install ngx-loadable-component
 </code></pre>
             <p>
                 The usage is similar to the previous library, you import it and
                 use it to load your component.
             </p>
-            <pre><code>
+            <pre><code class="language-typescript">
 import { LoadableModule } from 'ngx-loadable-component';
 
 @NgModule({

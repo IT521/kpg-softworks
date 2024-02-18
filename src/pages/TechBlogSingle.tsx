@@ -1,6 +1,7 @@
 import './pages.scss';
 
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 
 import { blogPosts } from '../components/blog/data/blogPosts';
@@ -22,6 +23,17 @@ export function TechBlogSingle() {
 
     return post ? (
         <main className="wrapper">
+            <Helmet>
+                <title>{post.title} | TechMavin | KPG Softworks</title>
+                <meta
+                    name="description"
+                    content={`TechMavin | ${post.title}`}
+                />
+                <meta
+                    name="robots"
+                    content="index, follow, max-image-preview:large"
+                />
+            </Helmet>
             <section className="hero blog">
                 <h1>TechMavin</h1>
                 <article>

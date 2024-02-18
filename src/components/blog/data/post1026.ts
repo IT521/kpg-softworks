@@ -11,7 +11,7 @@ export const post1026 = `
         different parts of a web page, such as headings, paragraphs, and links.
     </p>
     <p>Here's an example of a simple HTML page:</p>
-<pre><code>
+<pre><code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -85,7 +85,7 @@ export const post1026 = `
         Here's an example of some CSS that could be used to style the HTML page
         above:
     </p>
-<pre><code>
+<pre><code class="language-css">
 body {
   font-family: Arial, sans-serif;
   color: #333;
@@ -139,7 +139,7 @@ a:hover {
         the document.
     </p>
     <p>For example:</p>
-<pre><code>
+<pre><code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -162,7 +162,7 @@ a:hover {
         <span class="inline-code">&lt;div&gt;</span> element with a class of "container", you could
         use the following selector:
     </p>
-<pre><code>
+<pre><code class="language-css">
 .container p {
   /* styles go here */
 }

@@ -1,11 +1,24 @@
 import './pages.scss';
 
+import { Helmet } from 'react-helmet-async';
+
 import resumePDF from '../assets/terry-francis-resume.pdf';
 import { SinglePage as SinglePagePDFViewer } from '../components/pdf/SinglePage';
 
 export function About() {
     return (
         <main className="wrapper">
+            <Helmet>
+                <title>About Us | KPG Softworks</title>
+                <meta
+                    name="description"
+                    content="KPG Softworks architects and develops user interfaces and web applications that deliver an excellent customer experience"
+                />
+                <meta
+                    name="robots"
+                    content="index, follow, max-image-preview:large"
+                />
+            </Helmet>
             <section className="hero about">
                 <h1>Resume of Terry S. Francis</h1>
                 <article>

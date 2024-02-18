@@ -13,7 +13,7 @@ export const post1019 = `
         <li>
             Blur: You can use the blur function to blur an element. For example,
             to blur an element 5 pixels, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   filter: blur(5px);
 }
@@ -23,7 +23,7 @@ export const post1019 = `
             Brightness: You can use the brightness function to adjust the
             overall brightness of an element. For example, to increase the
             brightness of an element by 50%, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   filter: brightness(150%);
 }
@@ -33,7 +33,7 @@ export const post1019 = `
             Contrast: You can use the contrast function to adjust the overall
             contrast of an element. For example, to increase the contrast of an
             element by 50%, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   filter: contrast(150%);
 }
@@ -43,7 +43,7 @@ export const post1019 = `
             Grayscale: You can use the grayscale function to convert an element
             to grayscale. For example, to convert an element to 100% grayscale,
             you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   filter: grayscale(100%);
 }
@@ -53,7 +53,7 @@ export const post1019 = `
             Hue-rotate: You can use the hue-rotate function to shift the hue of
             an element. For example, to shift the hue of an element 180 degrees,
             you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   filter: hue-rotate(180deg);
 }

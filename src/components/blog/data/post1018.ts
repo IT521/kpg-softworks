@@ -13,7 +13,7 @@ export const post1018 = `
             Rotate: You can use the rotate function to rotate an element around
             its center point. For example, to rotate an element 45 degrees
             clockwise, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   transform: rotate(45deg);
 }
@@ -23,7 +23,7 @@ export const post1018 = `
             Scale: You can use the scale function to change the size of an
             element. For example, to scale an element to 200% of its original
             size, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   transform: scale(2);
 }
@@ -33,7 +33,7 @@ export const post1018 = `
             Skew: You can use the skew function to tilt an element along the
             x-axis or y-axis. For example, to skew an element 45 degrees along
             the x-axis, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   transform: skewX(45deg);
 }
@@ -43,7 +43,7 @@ export const post1018 = `
             Translate: You can use the translate function to move an element
             along the x-axis or y-axis. For example, to translate an element 50
             pixels along the x-axis, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   transform: translateX(50px);
 }
@@ -54,7 +54,7 @@ export const post1018 = `
             single transform property to create more complex effects. For
             example, to rotate, scale, and translate an element all at once, you
             can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element {
   transform: rotate(45deg) scale(1.5) translateX(50px);
 }

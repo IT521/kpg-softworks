@@ -1,10 +1,27 @@
 import './pages.scss';
 
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 export function Home() {
     return (
         <main className="wrapper">
+            <Helmet>
+                <title>
+                    KPG Softworks - TypeScript, JavaScript, React, and Angular
+                    Software Development
+                </title>
+                <meta
+                    name="description"
+                    content="KPG Softworks, located in Atlanta, Georgia, was established in 2005 and has since been
+                        offering small and large organizations high-quality full
+                        stack software development."
+                />
+                <meta
+                    name="robots"
+                    content="index, follow, max-image-preview:large"
+                />
+            </Helmet>
             <section className="hero">
                 <h1>Need code?</h1>
                 <article>

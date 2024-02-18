@@ -24,7 +24,7 @@ export const post1024 = `
         folder. You can then link to the Bootstrap CSS and JavaScript files in
         your HTML file:
     </p>
-    <pre><code>
+    <pre><code class="language-html">
 &lt;link rel="stylesheet" href="/path/to/bootstrap.css"&gt;
 &lt;script src="/path/to/bootstrap.js"&gt;&lt;/script&gt;
 </code></pre>
@@ -32,14 +32,14 @@ export const post1024 = `
         If you prefer to use npm, you can install Bootstrap by running the
         following command:
     </p>
-    <pre><code>
+    <pre><code class="language-bash">
 npm install bootstrap
 </code></pre>
     <p>
         This will install Bootstrap as a dependency in your project. You can
         then link to the Bootstrap CSS and JavaScript files in your HTML file:
     </p>
-    <pre><code>
+    <pre><code class="language-html">
 &lt;link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"&gt;
 &lt;script src="/node_modules/bootstrap/dist/js/bootstrap.js"&gt;&lt;/script&gt;
 </code></pre>
@@ -52,7 +52,7 @@ npm install bootstrap
     <p>
         Here is an example of the basic HTML structure of a Bootstrap website:
     </p>
-    <pre><code>
+    <pre><code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -100,7 +100,7 @@ npm install bootstrap
     <p>
         Here is an example of how you can create a navigation bar with a logo:
     </p>
-    <pre><code>
+    <pre><code class="language-html">
 &lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
   &lt;a class="navbar-brand" href="#"&gt;My Website&lt;/a&gt;
   &lt;button class="navbar-toggler"
@@ -156,7 +156,7 @@ npm install bootstrap
         Here is an example of how you can create a responsive layout for your
         main content:
     </p>
-    <pre><code>
+    <pre><code class="language-html">
 &lt;div class="container"&gt;
   &lt;div class="row"&gt;
     &lt;div class="col-md-8"&gt;
@@ -182,7 +182,7 @@ npm install bootstrap
         inside the <span class="inline-code">footer</span> element.
     </p>
     <p>Here is an example of how you can create a simple footer:</p>
-    <pre><code>
+    <pre><code class="language-html">
 &lt;footer class="bg-light py-3 mt-4"&gt;
     &lt;div class="container"&gt;
         &lt;p class="text-center mb-0"&gt;

@@ -15,7 +15,7 @@ export const post1020 = `
             :active, and :focus pseudo-classes to style links based on their
             state. For example, to change the color of a link when it is hovered
             over, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 a:hover {
   color: blue;
 }
@@ -26,7 +26,7 @@ a:hover {
             element when it is hovered over with the mouse. For example, to
             change the background color of an element when it is hovered over,
             you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element:hover {
   background-color: red;
 }
@@ -37,7 +37,7 @@ a:hover {
             element when it is being actively clicked or pressed. For example,
             to change the font size of an element when it is being clicked, you
             can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .element:active {
   font-size: 20px;
 }
@@ -48,7 +48,7 @@ a:hover {
             element when it has focus, such as when it is selected or tabbed to.
             For example, to change the outline color of an input field when it
             has focus, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 input:focus {
   outline-color: blue;
 }
@@ -59,7 +59,7 @@ input:focus {
             :checked, and :required pseudo-classes to style form elements based
             on their state. For example, to change the background color of a
             checked checkbox, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 input[type="checkbox"]:checked {
   background-color: yellow;
 }
@@ -71,7 +71,7 @@ input[type="checkbox"]:checked {
             element of a parent. For example, to change the font size of the
             first list item in an unordered list, you can use the following
             code:
-<pre><code>
+<pre><code class="language-css">
 ul li:first-child {
   font-size: larger;
 }
@@ -84,7 +84,7 @@ ul li:first-child {
             ::before: You can use the ::before pseudo-element to insert content
             before an element. For example, to insert an image before the first
             paragraph of a document, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 p::before {
   content: url(image.jpg);
 }
@@ -94,7 +94,7 @@ p::before {
             ::after: You can use the ::after pseudo-element to insert content
             after an element. For example, to insert a copyright symbol after
             the last paragraph of a document, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 p::after {
   content: "©";
 }
@@ -105,7 +105,7 @@ p::after {
             style the first letter of an element. For example, to make the first
             letter of a paragraph larger and bold, you can use the following
             code:
-<pre><code>
+<pre><code class="language-css">
 p::first-letter {
   font-size: 20px;
   font-weight: bold;
@@ -116,7 +116,7 @@ p::first-letter {
             ::first-line: You can use the ::first-line pseudo-element to style
             the first line of an element. For example, to make the first line of
             a paragraph italic, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 p::first-line {
   font-style: italic;
 }

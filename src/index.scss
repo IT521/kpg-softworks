@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'prismjs/plugins/toolbar/prism-toolbar' as *;
+@use 'prismjs/themes/prism' as *;
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
 
@@ -61,30 +63,6 @@ h6 {
         transition: all 0.3s;
         &:hover {
             opacity: 0.6;
-        }
-    }
-    & pre {
-        // background-color: $kpg-code-background-color;
-        background-color: $color-code-background;
-        color: $color-code-color;
-        border-radius: 0.75rem;
-
-        &:hover,
-        &:focus {
-            background-color: lighten($color-code-background, 10%);
-        }
-        & code {
-            display: block;
-            max-width: 100%;
-            min-width: pixel-to-rem(100px);
-            background: none;
-            white-space: pre;
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-                monospace;
-            -webkit-overflow-scrolling: touch;
-            overflow-x: auto;
-            padding: pixel-to-rem(16px);
-            padding-top: 0;
         }
     }
 

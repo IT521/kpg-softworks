@@ -1,6 +1,6 @@
 export const post1008 = `
 <article>
-<pre><code data-language-javascript>
+<pre><code class="language-typescript">
 function findClosestValue(arr, target) {
   // Sort the array in ascending order
   arr.sort((a, b) => a - b);
