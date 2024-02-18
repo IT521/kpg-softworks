@@ -20,7 +20,7 @@ export const post1022 = `
         to the OpenWeatherMap API to retrieve the current weather for a given
         city:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 const API_KEY = 'YOUR_API_KEY';
 const CITY = 'Seattle';
 
@@ -50,7 +50,7 @@ fetch(url)
         contains a property called <span class="inline-code">name</span>, you can access it like
         this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 const name = data.name;
 // or
 const name = data['name'];
@@ -62,7 +62,7 @@ const name = data['name'];
         the 200s indicates a successful request, while a status code in the 400s
         or 500s indicates an error.
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 if (response.status === 200) {
   // request was successful
   const data = response.json();
@@ -87,7 +87,7 @@ if (response.status === 200) {
         <span class="inline-code">&amp;</span> character.
     </p>
     <p>Here is an example of making an API request with query parameters:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 const API_KEY = 'YOUR_API_KEY';
 const CITY = 'Atlanta';
 const UNITS = 'imperial';
@@ -119,7 +119,7 @@ fetch(url)
         keys and the header values as the values.
     </p>
     <p>Here is an example of making an API request with headers:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 const API_KEY = 'YOUR_API_KEY';
 const CITY = 'Dallas';
 const UNITS = 'imperial';
@@ -159,7 +159,7 @@ fetch(url, { headers })
         <li><span class="inline-code">body</span>: the data to be sent with the request</li>
     </ul>
     <p>Here is an example of making a POST request with data:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 const data = { name: 'John', age: 30 };
 
 fetch('https://example.com/api/create', {
@@ -193,7 +193,7 @@ fetch('https://example.com/api/create', {
         promise to resolve before continuing with the rest of the code. Here is
         an example of using async/await to make multiple API requests:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 async function getWeather() {
   const API_KEY = 'YOUR_API_KEY';
   const CITY = 'Chicago';
@@ -228,7 +228,7 @@ getWeather();
         be used in place of callback functions.
     </p>
     <p>Here is an example of using Promises to make multiple API requests:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 function getWeather() {
   const API_KEY = 'YOUR_API_KEY';
   const CITY = 'Miami';

@@ -16,7 +16,7 @@ export const post1016 = `
             grid-template-columns properties to define the number of rows and
             columns in the grid. For example, to create a grid with three rows
             and three columns, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .container {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -29,7 +29,7 @@ export const post1016 = `
             place items into specific rows and columns in the grid. For example,
             to place an item into the first row and second column of the grid,
             you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .item {
   grid-row: 1;
   grid-column: 2;
@@ -41,7 +41,7 @@ export const post1016 = `
             properties to make an item span multiple rows or columns. For
             example, to make an item span the first two rows of the grid, you
             can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .item {
   grid-row-span: 2;
 }
@@ -52,7 +52,7 @@ export const post1016 = `
             justify-items properties to align and justify items within their
             grid cells. For example, to align items vertically in the center of
             their cells, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .container {
   align-items: center;
 }
@@ -63,7 +63,7 @@ export const post1016 = `
             auto-fit or auto-fill keywords to create a grid that adjusts to the
             available space. For example, to create a grid that adjusts to the
             available width, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

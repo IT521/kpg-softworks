@@ -16,7 +16,7 @@ export const post1023 = `
         In JavaScript, you can declare variables using the
         <span class="inline-code">var</span> keyword, like this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 var name = "John";
 </code></pre>
     <p>
@@ -54,7 +54,7 @@ var name = "John";
         </li>
     </ul>
     <p>You can use typeof to check the type of a value in JavaScript:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 console.log(typeof "Hello, world!"); // "string"
 console.log(typeof 42); // "number"
 console.log(typeof true); // "boolean"
@@ -97,7 +97,7 @@ console.log(typeof undefined); // "undefined"
         A function is a block of code that can be called by a name. You can
         define a function in JavaScript like this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 function greet(name) {
   console.log("Hello, " + name + "!");
 }
@@ -108,7 +108,7 @@ greet("John"); // prints "Hello, John!"
         You can also define a function using the
         <span class="inline-code">function</span> keyword, like this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 var greet = function(name) {
   console.log("Hello, " + name + "!");
 }
@@ -127,7 +127,7 @@ greet("John"); // prints "Hello, John!"
         <span class="inline-code">document.getElementById</span> function, which
         returns the element with the specified id attribute. For example:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 var element = document.getElementById("my-element");
 </code></pre>
     <p>You can also use other methods to access DOM elements, such as:</p>
@@ -150,7 +150,7 @@ var element = document.getElementById("my-element");
         </li>
     </ul>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 var elementList = document.getElementsByTagName("p"); // returns a list of &lt;p&gt; elements
 var elements = document.getElementsByClassName("my-class"); // returns a list of elements with the class "my-class"
 var element = document.querySelector("#my-element"); // returns the element with the id "my-element"
@@ -188,7 +188,7 @@ var elements = document.querySelectorAll(".my-class"); // returns a list of elem
         </li>
     </ul>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 var element = document.getElementById("my-element");
 element.innerHTML = "Hello, world!"; // sets the content of the element to "Hello, world!"
 
@@ -224,7 +224,7 @@ element.style.color = "red"; // sets the color of the element to red
         </li>
     </ul>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 var element = document.createElement("p"); // creates a new &lt;p&gt; element
 element.innerHTML = "Hello, world!"; // sets the content of the element
 
@@ -242,7 +242,7 @@ parent.removeChild(child); // removes the child element from the DOM
         element.
     </p>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 var button = document.getElementById("my-button");
 button.addEventListener("click", function() {
   console.log("Button was clicked!");

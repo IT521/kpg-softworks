@@ -19,7 +19,7 @@ export const post1017 = `
             specify the duration, timing, and other aspects of the animation.
             For example, to create a simple fade-in animation that lasts 2
             seconds, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -39,7 +39,7 @@ export const post1017 = `
             defining multiple keyframes in your @keyframes rule. For example, to
             create an animation that scales an element up and then down over the
             course of 2 seconds, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 @keyframes scale {
   0% {
     transform: scale(1);
@@ -62,7 +62,7 @@ export const post1017 = `
             to control the timing of the animation. For example, to create an
             animation that starts slowly and then speeds up, you can use the
             following code:
-<pre><code>
+<pre><code class="language-css">
 @keyframes slide-left {
   from {
     transform: translateX(0);
@@ -82,7 +82,7 @@ export const post1017 = `
             a delay before the animation begins. For example, to create an
             animation that starts 2 seconds after the element is hovered over,
             you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -103,7 +103,7 @@ export const post1017 = `
             property to specify the number of times the animation should be
             played. For example, to create an animation that repeats
             indefinitely, you can use the following code:
-<pre><code>
+<pre><code class="language-css">
 @keyframes spin {
   from {
     transform: rotate(0deg);

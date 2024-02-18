@@ -6,7 +6,7 @@ export const post1029 = `
         of a value. To check if a value is an object, you can use the following
         code:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 if (typeof value === 'object') {
   // value is an object
 } else {
@@ -18,7 +18,7 @@ if (typeof value === 'object') {
         <span class="inline-code">Object.prototype.toString</span> method to
         check the value's class, like this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 if (Object.prototype.toString.call(value) === '[object Object]') {
   // value is an object
 } else {
@@ -33,7 +33,7 @@ if (Object.prototype.toString.call(value) === '[object Object]') {
         chain. To handle this case, you can use the
         <span class="inline-code">instanceof</span> operator, like this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 if (value instanceof Object) {
   // value is an object
 } else {
@@ -45,7 +45,7 @@ if (value instanceof Object) {
         <span class="inline-code">Object.prototype.isPrototypeOf</span> method
         to check if an object is in the prototype chain of the value, like this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 if (Object.prototype.isPrototypeOf(value)) {
   // value is an object
 } else {
@@ -61,7 +61,7 @@ if (Object.prototype.isPrototypeOf(value)) {
         You can combine the different methods into a single a function named <span class="inline-code">isObject</span> that
         determines if a value is an object in JavaScript:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 function isObject(value) {
   if (typeof value === 'object') {
     return true;
@@ -89,7 +89,7 @@ function isObject(value) {
         <span class="inline-code">false</span> if it is not.
     </p>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 console.log(isObject({})); // true
 console.log(isObject([])); // true
 console.log(isObject(1)); // false
@@ -101,7 +101,7 @@ console.log(isObject('hello')); // false
         You can update the
         <span class="inline-code">isObject</span> function to exclude arrays:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 function isObject(value) {
   if (Array.isArray(value)) {
     return false;
@@ -135,7 +135,7 @@ function isObject(value) {
         array.
     </p>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 console.log(isObject({})); // true
 console.log(isObject([])); // false
 console.log(isObject(1)); // false
@@ -148,7 +148,7 @@ console.log(isObject('hello')); // false
         value's constructor against the
         <span class="inline-code">Object</span> constructor, like this:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 function isObject(value) {
   return value.constructor === Object;
 }
@@ -164,7 +164,7 @@ function isObject(value) {
         an object.
     </p>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 console.log(isObject({})); // true
 console.log(isObject([])); // false
 console.log(isObject(1)); // false
@@ -189,7 +189,7 @@ console.log(isObject('hello')); // false
         the <span class="inline-code">Object.prototype</span> in their prototype
         chain:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 function isObject(value) {
   if (value === null || typeof value !== 'object') {
     return false;
@@ -213,7 +213,7 @@ function isObject(value) {
         indicating that the value is an object.
     </p>
     <p>For example:</p>
-    <pre><code>
+    <pre><code class="language-javascript">
 console.log(isObject({})); // true
 console.log(isObject([])); // false
 console.log(isObject(1)); // false

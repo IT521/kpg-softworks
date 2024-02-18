@@ -12,7 +12,7 @@ export const post1030 = `
         want to remove.
     </p>
     <p>For example, let's say you have the following array:</p>
-<pre><code>
+<pre><code class="language-javascript">
 let fruits = ['apple', 'banana', 'orange', 'mango', 'pear'];
 </code></pre>
     <p>
@@ -20,13 +20,13 @@ let fruits = ['apple', 'banana', 'orange', 'mango', 'pear'];
         <span class="inline-code">'orange'</span>), you can use the following
         code:
     </p>
-<pre><code>
+<pre><code class="language-javascript">
 fruits.splice(2, 1);
 </code></pre>
     <p>
         This will remove the item at index 2, and the resulting array will be:
     </p>
-<pre><code>
+<pre><code class="language-javascript">
 ['apple', 'banana', 'mango', 'pear']
 </code></pre>
     <p>
@@ -36,14 +36,14 @@ fruits.splice(2, 1);
         <span class="inline-code">'orange'</span>), you can use the following
         code:
     </p>
-<pre><code>
+<pre><code class="language-javascript">
 fruits.splice(1, 3);
 </code></pre>
     <p>
         This will remove the three items starting at index 1, and the resulting
         array will be:
     </p>
-<pre><code>
+<pre><code class="language-javascript">
 ['apple', 'pear']
 </code></pre>
     <p>
@@ -58,7 +58,7 @@ fruits.splice(1, 3);
         <span class="inline-code">splice()</span> method to remove it.
     </p>
     <p>For example, let's say you have the following array:</p>
-<pre><code>
+<pre><code class="language-javascript">
 let fruits = ['apple', 'banana', 'orange', 'mango', 'pear'];
 </code></pre>
     <p>
@@ -66,7 +66,7 @@ let fruits = ['apple', 'banana', 'orange', 'mango', 'pear'];
         <span class="inline-code">'orange'</span> item. Here is how you can do
         it:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 let index = fruits.indexOf('orange');
 if (index &gt; -1) {
   fruits.splice(index, 1);
@@ -78,7 +78,7 @@ if (index &gt; -1) {
         the <span class="inline-code">splice()</span> method. The resulting
         array will be:
     </p>
-<pre><code>
+<pre><code class="language-javascript">
 ['apple', 'banana', 'mango', 'pear']
 </code></pre>
     <p>
@@ -90,7 +90,7 @@ if (index &gt; -1) {
         If you want to remove all occurrences of the item, you can use a loop to
         repeat the process until the item is not found. Here is an example:
     </p>
-    <pre><code>
+    <pre><code class="language-javascript">
 while (fruits.indexOf('orange') &gt; -1) {
   fruits.splice(fruits.indexOf('orange'), 1);
 }

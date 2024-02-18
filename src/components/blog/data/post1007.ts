@@ -4,7 +4,7 @@ export const post1007 = `
 <ol>
 <li>See <a href="/blog/1006" target="_blank">Get stale branches in Azure DevOps</a></li>
 <li>Setup working directories
-<pre><code data-language-bash>
+<pre><code class="language-bash">
 export DEVELOPER_HOME="CHANGE_ME"; # set path to local working directory
 export AZ_REPO="CHANGE_ME"; # set Azure Repository Name
 
@@ -16,7 +16,7 @@ touch \${DEVELOPER_HOME}/azCLI/scripts/delete_stale_branches.sh
 </code></pre>
 </li>
 <li>Edit file: <span class="inline-code">\${DEVELOPER_HOME}/azCLI/scripts/delete_stale_branches.sh</span>:
-<pre><code data-language-bash>
+<pre><code class="language-bash">
 #!/bin/bash
 
 STALE_BRANCHES_FILE="\${DEVELOPER_HOME}/azCLI/data/staleBranches.csv"
@@ -50,13 +50,13 @@ done
 </code></pre>
 </li>
 <li>Run delete script
-<pre><code data-language-bash>
+<pre><code class="language-bash">
 cd \${DEVELOPER_HOME}/azCLI
 sh ./scripts/delete_stale_branches.sh
 </code></pre>
 </li>
 <li>If needed, run force delete script
-<pre><code data-language-bash>
+<pre><code class="language-bash">
 cd # to your local repo folder
 sh \${DEVELOPER_HOME}/git-delete-stale-branches.sh
 </code></pre>

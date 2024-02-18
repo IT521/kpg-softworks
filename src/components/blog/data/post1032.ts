@@ -10,10 +10,10 @@ export const post1032 = `
     </p>
     <h3>Installation</h3>
     <p>Webpack 4 and 5 can be installed using npm:</p>
-<pre><code>
+<pre><code class="language-bash">
 npm install webpack@4
 </code></pre>
-<pre><code>
+<pre><code class="language-bash">
 npm install webpack@5
 </code></pre>
     <h3>Performance</h3>
