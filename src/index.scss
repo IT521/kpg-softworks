@@ -65,7 +65,28 @@ h6 {
             opacity: 0.6;
         }
     }
+    & pre {
+        background-color: $kpg-code-background-color;
+        border-radius: 5px;
 
+        code {
+            .tag {
+                color: $kpg-code-accent-color;
+            }
+
+            .attr-name {
+                color: #63c1ad;
+            }
+
+            .attr-value {
+                color: #e26868;
+            }
+        }
+    }
+    & pre[class*='language-'] {
+        margin: 0;
+        font-size: 13px;
+    }
     & .inline-code {
         font-weight: bold;
         white-space: nowrap;

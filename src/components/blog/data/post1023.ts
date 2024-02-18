@@ -17,7 +17,7 @@ export const post1023 = `
         <span class="inline-code">var</span> keyword, like this:
     </p>
     <pre><code class="language-javascript">
-var name = "John";
+let name = "John";
 </code></pre>
     <p>
         You can also use the <span class="inline-code">let</span> and
@@ -105,12 +105,22 @@ function greet(name) {
 greet("John"); // prints "Hello, John!"
 </code></pre>
     <p>
-        You can also define a function using the
+        Or, you can define a function using the
         <span class="inline-code">function</span> keyword, like this:
     </p>
     <pre><code class="language-javascript">
-var greet = function(name) {
-  console.log("Hello, " + name + "!");
+const greet = function(name) {
+  console.log(\`Hello, \${name}!\`);
+}
+
+greet("John"); // prints "Hello, John!"
+</code></pre>
+    <p>
+        Or, you can also define a function using <span class="inline-code">arrow function expressions</span>, like this:
+    </p>
+    <pre><code class="language-javascript">
+const greet = (name) => {
+  console.log(\`Hello, \${name}!\`);
 }
 
 greet("John"); // prints "Hello, John!"
@@ -128,7 +138,7 @@ greet("John"); // prints "Hello, John!"
         returns the element with the specified id attribute. For example:
     </p>
     <pre><code class="language-javascript">
-var element = document.getElementById("my-element");
+let element = document.getElementById("my-element");
 </code></pre>
     <p>You can also use other methods to access DOM elements, such as:</p>
     <ul>
@@ -151,10 +161,10 @@ var element = document.getElementById("my-element");
     </ul>
     <p>For example:</p>
     <pre><code class="language-javascript">
-var elementList = document.getElementsByTagName("p"); // returns a list of &lt;p&gt; elements
-var elements = document.getElementsByClassName("my-class"); // returns a list of elements with the class "my-class"
-var element = document.querySelector("#my-element"); // returns the element with the id "my-element"
-var elements = document.querySelectorAll(".my-class"); // returns a list of elements with the class "my-class"
+let elementList = document.getElementsByTagName("p"); // returns a list of &lt;p&gt; elements
+let elements = document.getElementsByClassName("my-class"); // returns a list of elements with the class "my-class"
+let element = document.querySelector("#my-element"); // returns the element with the id "my-element"
+let elements = document.querySelectorAll(".my-class"); // returns a list of elements with the class "my-class"
 </code></pre>
     <h4>Modifying DOM elements</h4>
     <p>
@@ -189,22 +199,22 @@ var elements = document.querySelectorAll(".my-class"); // returns a list of elem
     </ul>
     <p>For example:</p>
     <pre><code class="language-javascript">
-var element = document.getElementById("my-element");
+let element = document.getElementById("my-element");
 element.innerHTML = "Hello, world!"; // sets the content of the element to "Hello, world!"
 
-var input = document.getElementById("my-input");
+let input = document.getElementById("my-input");
 input.value = "Some value"; // sets the value of the input element
 
-var image = document.getElementById("my-image");
+let image = document.getElementById("my-image");
 image.src = "image.jpg"; // sets the src attribute of the image element
 
-var link = document.getElementById("my-link");
+let link = document.getElementById("my-link");
 link.href = "https://example.com"; // sets the href attribute of the link element
 
-var element = document.getElementById("my-element");
+let element = document.getElementById("my-element");
 element.setAttribute("data-id", 123); // sets the "data-id" attribute of the element to "123"
 
-var element = document.getElementById("my-element");
+let element = document.getElementById("my-element");
 element.style.color = "red"; // sets the color of the element to red
 </code></pre>
     <h4>Adding and deleting DOM elements</h4>
@@ -225,13 +235,13 @@ element.style.color = "red"; // sets the color of the element to red
     </ul>
     <p>For example:</p>
     <pre><code class="language-javascript">
-var element = document.createElement("p"); // creates a new &lt;p&gt; element
+let element = document.createElement("p"); // creates a new &lt;p&gt; element
 element.innerHTML = "Hello, world!"; // sets the content of the element
 
-var parent = document.getElementById("my-parent");
+let parent = document.getElementById("my-parent");
 parent.appendChild(element); // adds the element as the last child of the parent element
 
-var child = document.getElementById("my-child");
+let child = document.getElementById("my-child");
 parent.removeChild(child); // removes the child element from the DOM
 </code></pre>
     <h4>Event listeners</h4>
@@ -243,7 +253,7 @@ parent.removeChild(child); // removes the child element from the DOM
     </p>
     <p>For example:</p>
     <pre><code class="language-javascript">
-var button = document.getElementById("my-button");
+let button = document.getElementById("my-button");
 button.addEventListener("click", function() {
   console.log("Button was clicked!");
 });
